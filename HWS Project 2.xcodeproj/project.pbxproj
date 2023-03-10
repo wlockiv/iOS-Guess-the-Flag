@@ -24,6 +24,7 @@
 		389C6D2729BAA8ED00B3B221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		389C6D2A29BAA8ED00B3B221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		389C6D2C29BAA8ED00B3B221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		389C6D3229BB80C100B3B221 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		389C6D1229BAA8EA00B3B221 = {
 			isa = PBXGroup;
 			children = (
+				389C6D3229BB80C100B3B221 /* README.md */,
 				389C6D1D29BAA8EA00B3B221 /* HWS Project 2 */,
 				389C6D1C29BAA8EA00B3B221 /* Products */,
 			);
