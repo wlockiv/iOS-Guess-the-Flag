@@ -128,12 +128,18 @@ class ViewController: UIViewController {
         navAppearance.backgroundColor = .systemGray6
         navAppearance.titleTextAttributes = [
             .font: UIFont.boldSystemFont(ofSize: 20.0),
-            .foregroundColor: UIColor.black
+            .foregroundColor: UIColor.black,
         ]
         
-        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.tintColor = .systemBlue
         navigationController?.navigationBar.standardAppearance = navAppearance
         navigationController?.navigationBar.scrollEdgeAppearance = navAppearance
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .bookmarks,
+            target: self,
+            action: #selector(showScore)
+        )
     }
     
     private func setupButtons() {
@@ -145,6 +151,20 @@ class ViewController: UIViewController {
         
         self.button3.layer.borderWidth = 1
         self.button3.layer.borderColor = UIColor.lightGray.cgColor
+    }
+    
+    @objc func showScore() {
+        let alertController = UIAlertController(
+            title: "Score",
+            message: "Your score is: \(self.score).",
+            preferredStyle: .alert
+        )
+        
+        alertController.addAction(UIAlertAction(
+            title: "Ok", style: .default
+        ))
+        
+        present(alertController, animated: true)
     }
 }
 
